@@ -1,7 +1,10 @@
-﻿namespace MVCUnitProject.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MVCUnitProject.Models
 {
     public class JordanModel
     {
-        public string? Name { get; set; }
+        [Required]
+        public string? name { get; set; }
     }
 }

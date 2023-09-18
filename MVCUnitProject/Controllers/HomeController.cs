@@ -13,7 +13,16 @@ namespace MVCUnitProject.Controllers
 
         public IActionResult Welcome(JordanModel model)
         {
-            return View(model);
+            if (ModelState.IsValid)
+            {
+                return View(model);
+            }
+            return RedirectToAction("Error");
+        }
+
+        public IActionResult Error(JordanModel model) 
+        {
+           return View(model);
         }
     }
 }
