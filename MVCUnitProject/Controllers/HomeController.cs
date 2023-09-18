@@ -11,7 +11,7 @@ namespace MVCUnitProject.Controllers
             return View();
         }
 
-        public IActionResult Display(JordanModel model)
+        public IActionResult Welcome(JordanModel model)
         {
             return View(model);
         }
