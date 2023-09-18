@@ -11,6 +11,7 @@ namespace MVCUnitProject.Controllers
             return View();
         }
 
+        // Welcome page if name is entered
         public IActionResult Welcome(JordanModel model)
         {
             if (ModelState.IsValid)
@@ -20,6 +21,7 @@ namespace MVCUnitProject.Controllers
             return RedirectToAction("Error");
         }
 
+        // Error view
         public IActionResult Error(JordanModel model) 
         {
            return View(model);
