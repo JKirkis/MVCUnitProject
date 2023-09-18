@@ -1,6 +1,9 @@
 ﻿@model JordanModel
 
-<label>Enter Your Name</label>
-<input asp-for="Name" type="text" />
+<form asp-action="Welcome">
+    <label>Enter your name</label>
+    <input asp-for="Name" type="text" />
+    <button type="submit">Submit</button>
+</form>
 
 
